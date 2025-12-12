@@ -8,9 +8,8 @@ skip 2 unlucky numbers
 
 function getLottoNums() {
   const lottoDrawList = [];
-  while (lottoDrawList.length < 5) {
+  while (lottoDrawList.length < 6) {
     const lottoNum = Math.floor(Math.random() * 47 + 1);
-    console.log("current num", lottoNum);
     if (lottoNum === 39 || lottoNum === 17) {
       continue;
     }
